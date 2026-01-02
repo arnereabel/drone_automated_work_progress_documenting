@@ -13,17 +13,31 @@ Automated drone photography system using DJI Tello for documenting work progress
 
 ## Quick Start
 
-### 1. Install Dependencies
+### 1. Create Virtual Environment
 
 ```bash
 cd drone_photo_taking
+
+# Create venv
+python -m venv venv
+
+# Activate venv (Windows)
+venv\Scripts\activate
+
+# Activate venv (Linux/Mac)
+source venv/bin/activate
+```
+
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
 **Note:** On Windows, you may need to install Visual C++ Redistributable for `pyzbar`:
 https://github.com/NaturalHistoryMuseum/pyzbar#windows
 
-### 2. Run in Simulation Mode
+### 3. Run in Simulation Mode
 
 Test the system without a drone:
 
@@ -31,12 +45,13 @@ Test the system without a drone:
 python src/main.py
 ```
 
-### 3. Run with Real Drone
+### 4. Run with Real Drone
 
 ```bash
 # Connect your computer to Tello's WiFi
 python src/main.py --live
 ```
+
 
 ## CLI Usage
 

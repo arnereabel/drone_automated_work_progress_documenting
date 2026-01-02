@@ -1,0 +1,34 @@
+# Default Mission Configuration
+# Tello Drone Photography System
+
+flight:
+  takeoff_height_cm: 100
+  movement_speed: 50  # 10-100 (Tello SDK units)
+  hover_stability_delay_sec: 2.0
+
+photo:
+  angles:
+    - name: "front"
+      rotation: 0
+    - name: "left45"
+      rotation: -45
+    - name: "right45"
+      rotation: 45
+  delay_between_shots_sec: 1.0
+  output_directory: "./photos"
+
+detection:
+  qr_timeout_sec: 3.0
+  fallback_id: "UNKNOWN"
+
+safety:
+  obstacle_check_enabled: true
+  obstacle_threshold: 0.3  # frame coverage ratio triggering avoidance
+  gesture_confidence_threshold: 0.7
+  emergency_gesture: "crossed_arms"
+  gesture_check_interval_sec: 0.5
+
+logging:
+  level: "INFO"
+  file: "./logs/mission.log"
+  console: true

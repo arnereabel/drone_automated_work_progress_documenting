@@ -1,0 +1,33 @@
+# MVP Waypoint Configuration
+# 3 stopping points, 10m apart along X axis
+
+# Coordinates are relative to takeoff point (in centimeters)
+# Tello coordinate system:
+#   X = forward/backward
+#   Y = left/right  
+#   Z = up/down (height)
+
+waypoints:
+  - name: "Stop 1"
+    x: 0
+    y: 0
+    z: 100  # 1m height
+    description: "First structure checkpoint"
+
+  - name: "Stop 2"
+    x: 1000  # 10m forward
+    y: 0
+    z: 100
+    description: "Second structure checkpoint"
+
+  - name: "Stop 3"
+    x: 2000  # 20m forward
+    y: 0
+    z: 100
+    description: "Third structure checkpoint"
+
+# Return to starting position after mission
+return_home: true
+
+# Speed for waypoint navigation (override default if needed)
+# navigation_speed: 50

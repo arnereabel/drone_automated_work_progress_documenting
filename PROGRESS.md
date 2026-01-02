@@ -43,6 +43,7 @@
 - [x] CLI entry point with test modes
 - [x] Unit tests (17 passed)
 - [x] Simulation mode verified working
+- [x] Virtual environment (venv) setup
 - [x] Pushed to GitHub
 
 ---
